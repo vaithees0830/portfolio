@@ -1,0 +1,93 @@
+@use '../abstract/abs_forwards' as *;
+
+.projects {
+    @extend .pt-10;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: $col2;
+    height: 100%;
+    padding: 20px;
+
+    &--container {
+        border-radius: .5pc;
+
+        &--shadow {
+            box-shadow: rgba(255, 255, 255, 0.500) 0 0 30px;
+            position: relative;
+            border-radius: inherit;
+
+            .color-container {
+                position: absolute;
+                @include box (100%, 100%);
+
+                .color1 {
+                    @include box (80px, 80px);
+                    background-color: rgb(5, 255, 68);
+                    border-radius: 50px;
+                    filter: blur(30px);
+                }
+
+                .color2 {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    @include box (120px, 120px);
+                    background-color: rgb(37 5 255);
+                    filter: blur(50px);
+                }
+            }
+
+            .card {
+                border-radius: inherit;
+                background-color: rgba(255, 255, 255, 0.432);
+                backdrop-filter: blur(20px);
+
+                @include flex-col();
+                gap: 10px;
+
+                @extend .p10;
+
+                border-top: 1px solid rgba(255, 255, 255, 0.74);
+                border-left: 1px solid rgba(255, 255, 255, 0.74);
+                border-right: 1px solid rgba(255, 255, 255, 0.74);
+                border-bottom: 3px solid rgba(255, 255, 255, 0.719);
+
+                box-shadow: inset rgba(0, 0, 0, 0.250) 0 0 2px, rgba(255, 255, 255, 0.5) 0 0 50px;
+
+                &--img {
+                    border-radius: inherit;
+                    position: relative;
+
+                    .link-btn {
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+
+                        background-color: rgba(0, 0, 0, 0.418);
+                        border-radius: .2pc !important;
+                        border: 1px solid black;
+                        backdrop-filter: blur(20px);
+                        color: white;
+                        @extend .p5, .pr-10, .pl-10;
+                        @include d-flex(center, center);
+                        gap: 10px;
+                        cursor: pointer;
+                        font-size: 14px;
+
+                        img {
+                            width: 15px;
+                            filter: invert(1);
+                        }
+                    }
+
+                    img {
+                        border-radius: .2pc !important;
+                        @include box (100%, 100%);
+                        box-shadow: rgba(0, 0, 0, 0.500) 0 0 1px;
+                    }
+                }
+            }
+        }
+    }
+}

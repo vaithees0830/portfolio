@@ -1,0 +1,142 @@
+{
+    "info": [
+        {
+            "name": "Vaitheeshwaran B",
+            "contact": [
+                {
+                    "name": "GMail",
+                    "img": "https://img.icons8.com/quill/30/mailbox-with-letter.png",
+                    "alt": "gmail-logo",
+                    "link": "mailto:vaitheeshwaranb3010@gmail.com",
+                    "label": "vaitheeshwaranb3010@gmail.com"
+                },
+                {
+                    "name": "Phone number",
+                    "img": "https://img.icons8.com/quill/30/blackberry.png",
+                    "alt": "phone-logo",
+                    "link": "tel:9360405959",
+                    "label": "+91 9360405959"
+                },
+                {
+                    "name": "Check out the resume",
+                    "img": "https://img.icons8.com/quill/30/chain.png",
+                    "alt": "link-logo",
+                    "link": "https://drive.google.com/file/d/1zgp5IIrg92EQ-4OTMT46McM44UMn6SxH/view?usp=sharing",
+                    "label": "Check out the resume"
+                }
+            ],
+            "social_media": [
+                {
+                    "name": "LinkedIn",
+                    "img": "https://img.icons8.com/quill/50/linkedin.png",
+                    "alt": "linkedin-logo",
+                    "link": "https://www.linkedin.com/in/vaitheeshwaranb?utm_source=share&utm_campaign=share_via&utm_content=profile"
+                },
+                {
+                    "name": "GitHub",
+                    "img": "https://img.icons8.com/quill/50/github.png",
+                    "alt": "github-logo",
+                    "link": "https://github.com/vaithees0830"
+                },
+                {
+                    "name": "Instagram",
+                    "img": "https://img.icons8.com/quill/50/instagram.png",
+                    "alt": "instagram-logo",
+                    "link": "https://www.instagram.com/vaithees3010?igsh=MWlwZjFmOW1rZWw4eQ=="
+                }
+            ]
+        },
+        {
+            "skills": [
+                {
+                    "name": "HTML 5",
+                    "img": "https://img.icons8.com/fluency/150/html-5.png",
+                    "alt": "html5-logo"
+                },
+                {
+                    "name": "CSS 3",
+                    "img": "https://img.icons8.com/fluency/150/css3.png",
+                    "alt": "css3-logo"
+                },
+                {
+                    "name": "Bootstrap",
+                    "img": "https://img.icons8.com/fluency/150/bootstrap.png",
+                    "alt": "bootstrap-logo"
+                },
+                {
+                    "name": "SASS",
+                    "img": "https://img.icons8.com/color/150/sass-avatar.png",
+                    "alt": "sass-logo"
+                },
+                {
+                    "name": "JavaScript",
+                    "img": "https://img.icons8.com/fluency/150/javascript.png",
+                    "alt": "javascript-logo"
+                },
+                {
+                    "name": "Typescript",
+                    "img": "https://img.icons8.com/fluency/150/typescript--v2.png",
+                    "alt": "typescript-logo"
+                },
+                {
+                    "name": "JSON",
+                    "img": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/150/external-json-javascript-object-notation-is-a-lightweight-data-interchange-format-logo-color-tal-revivo.png",
+                    "alt": "json-logo"
+                },
+                {
+                    "name": "JAVA",
+                    "img": "https://img.icons8.com/fluency/150/java-coffee-cup-logo.png",
+                    "alt": "java-logo"
+                },
+                {
+                    "name": "mySql",
+                    "img": "https://img.icons8.com/fluency/150/mysql-logo.png",
+                    "alt": "mysql-logo"
+                },
+                {
+                    "name": "Photoshop",
+                    "img": "https://img.icons8.com/fluency/150/adobe-photoshop.png",
+                    "alt": "photoshop-logo"
+                },
+                {
+                    "name": "Illustrator",
+                    "img": "https://img.icons8.com/fluency/150/adobe-illustrator.png",
+                    "alt": "illustrator-logo"
+                },
+                {
+                    "name": "Figma",
+                    "img": "https://img.icons8.com/fluency/150/figma.png",
+                    "alt": "figma"
+                }
+            ],
+            "certificates": [
+                {
+                    "name": "Web Designing",
+                    "img": "https://drive.google.com/file/d/1zfEMrvGHph78QxTUo5k004pOa0yBznl9/view?usp=sharing",
+                    "infor": "Completed in Accord info Matrix."
+                },
+                {
+                    "name": "Java Technology",
+                    "img": "https://drive.google.com/file/d/1zdnQJ22sofEurIbBFSl82RIV-hgfiElI/view?usp=sharing",
+                    "infor": "Completed in Accord info Matrix."
+                }
+            ],
+            "projects": [
+                {
+                    "name": "Versatile Text",
+                    "img": "./assets/images/1.png",
+                    "alt": "versatile-text",
+                    "desc": "",
+                    "link": "https://vaithees0830.github.io/versatile_text/"
+                },
+                {
+                    "name": "Shopping Design",
+                    "img": "./assets/images/2.png",
+                    "alt": "shopping-site",
+                    "desc": "",
+                    "link": "https://vaithees0830.github.io/mini_f/"
+                }
+            ]
+        }
+    ]
+}

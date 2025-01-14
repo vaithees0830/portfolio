@@ -1,0 +1,30 @@
+@use '../abstract/abs_forwards' as *;
+
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    @extend .pt-30;
+
+    .cert--container {
+        border-radius: .5pc;
+
+        &--shadow {
+            border-radius: inherit;
+            box-shadow: rgba(0, 0, 0, 20%) 0 15px 50px;
+
+            .card {
+                border-radius: inherit;
+                background-color: white;
+                border: 1px solid $col3;
+                @extend .p10;
+                @include d-flex (center, center);
+                gap: 15px;
+                text-align: $center;
+                flex-direction: column;
+            }
+        }
+
+
+    }
+}

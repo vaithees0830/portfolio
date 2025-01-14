@@ -1,0 +1,639 @@
+.p5, .projects--container--shadow .card--img .link-btn, .card--container--shadow .card {
+  padding: 5px;
+}
+
+.m5 {
+  margin: 5px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.p10, .projects--container--shadow .card, .certificates .cert--container--shadow .card, .btn--thirty, nav, .profile--container--contact > a {
+  padding: 10px;
+}
+
+.m10 {
+  margin: 10px;
+}
+
+.pt-10, .projects, .profile .nav-bottom > a {
+  padding-top: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.pl-10, .projects--container--shadow .card--img .link-btn {
+  padding-left: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.pr-10, .projects--container--shadow .card--img .link-btn {
+  padding-right: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.pb-10, .profile .nav-bottom > a {
+  padding-bottom: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.p15 {
+  padding: 15px;
+}
+
+.m15 {
+  margin: 15px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.pl-15, .profile .nav-bottom > a {
+  padding-left: 15px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.pr-15, .profile .nav-bottom > a {
+  padding-right: 15px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.m20 {
+  margin: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.pl-20, .btn--thirty {
+  padding-left: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.pr-20, .btn--thirty {
+  padding-right: 20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.p25 {
+  padding: 25px;
+}
+
+.m25 {
+  margin: 25px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.pl-25 {
+  padding-left: 25px;
+}
+
+.ml-25 {
+  margin-left: 25px;
+}
+
+.pr-25 {
+  padding-right: 25px;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.p30 {
+  padding: 30px;
+}
+
+.m30 {
+  margin: 30px;
+}
+
+.pt-30, .certificates {
+  padding-top: 30px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.pr-30 {
+  padding-right: 30px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Inter", serif;
+  color: #212121;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  padding: 0;
+  border-radius: 50px;
+  appearance: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: silver;
+  border-radius: 50px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .profile--container--contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .skills .card-text {
+    font-size: 2.5em !important;
+  }
+  nav {
+    gap: 5px !important;
+  }
+  .btn--scondary {
+    padding: 10px !important;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .profile--container--contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .card--container--shadow .card .card-img > img {
+    width: 60px !important;
+  }
+  nav {
+    gap: 5px !important;
+  }
+  .btn--scondary {
+    width: auto !important;
+    padding: 10px !important;
+  }
+  .skills, .certificates {
+    padding: 20px;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .projects {
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+.profile {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+.profile .nav-bottom {
+  justify-self: end;
+}
+.profile .nav-bottom > a {
+  border-radius: 50px;
+  background-color: #eee;
+  border: 1px dashed #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile .nav-bottom > a:hover {
+  border-bottom-color: rgb(151, 151, 151);
+  box-shadow: rgba(0, 0, 0, 0.2) 0 20px 80px;
+  transition: box-shadow 0.5s;
+}
+.profile--container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile--container--details > h1 {
+  font-size: min(6rem, 8vw);
+}
+.profile--container--contact {
+  border: 1px dashed #212121;
+  display: flex;
+  justify-content: unset;
+  align-items: unset;
+}
+.profile--container--contact > a {
+  border: 1px dashed #212121;
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 10px;
+  font-size: min(1rem, 4vw);
+}
+.profile--container--contact > a > div:hover {
+  border-bottom: 1px dashed #212121;
+}
+.profile--container--social {
+  display: flex;
+  justify-content: unset;
+  align-items: unset;
+  gap: 10px;
+}
+.profile--container--social a {
+  border-bottom: 1px dashed transparent;
+}
+.profile--container--social a:hover {
+  border-bottom-color: rgb(151, 151, 151);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.main {
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+.main .viewport {
+  height: 100%;
+  overflow-y: hidden;
+}
+.main .viewport--size {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.btn {
+  appearance: none;
+  border: none;
+}
+
+.btn--scondary {
+  width: 120px;
+  padding: 10px 20px;
+  border-radius: 0.5pc;
+  border: transparent;
+  border-top: 1px solid rgba(185, 185, 185, 0.5);
+  border-left: 1px solid rgba(185, 185, 185, 0.5);
+  border-right: 1px solid rgba(185, 185, 185, 0.5);
+  border-bottom: 3px solid rgba(185, 185, 185, 0.774);
+  background-color: #fff;
+}
+.btn--scondary:hover {
+  border-top: 1px solid rgba(119, 119, 119, 0.5);
+  border-left: 1px solid rgba(119, 119, 119, 0.5);
+  border-right: 1px solid rgba(119, 119, 119, 0.5);
+  border-bottom: 3px solid rgba(119, 119, 119, 0.774);
+  box-shadow: rgba(0, 0, 0, 0.171) 0 30px 70px;
+  background-color: #000;
+  color: #FFF;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.active {
+  border-top: 1px solid rgba(119, 119, 119, 0.5);
+  border-left: 1px solid rgba(119, 119, 119, 0.5);
+  border-right: 1px solid rgba(119, 119, 119, 0.5);
+  border-bottom: 3px solid rgba(119, 119, 119, 0.774);
+  box-shadow: rgba(0, 0, 0, 0.171) 0 30px 70px;
+  background-color: #000;
+  color: #FFF;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn--thirty {
+  background-color: black;
+  color: white;
+  border-radius: 0.5pc;
+  cursor: pointer;
+  border-top: 1px solid rgb(68, 68, 68);
+  border-left: 1px solid rgb(68, 68, 68);
+  border-right: 1px solid rgb(68, 68, 68);
+  border-bottom: 3px solid rgb(68, 68, 68);
+  box-shadow: rgba(0, 0, 0, 0.171) 0 30px 50px, rgba(0, 0, 0, 0.171) 0 30px 100px;
+}
+.btn--thirty:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+.btn--thirty:active {
+  transform: scale(1);
+}
+
+.card--container {
+  border-radius: 0.5pc;
+}
+.card--container--shadow {
+  box-shadow: rgba(255, 255, 255, 0.5) 0 0 30px;
+  border-radius: inherit;
+  position: relative;
+}
+.card--container--shadow .color-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+.card--container--shadow .color-container .color1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: rgb(230, 230, 230);
+  filter: blur(40px);
+  position: absolute;
+  left: 80px;
+  bottom: -30px;
+}
+.card--container--shadow .color-container .color2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(0, 174, 255);
+  filter: blur(50px);
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.card--container--shadow .card {
+  box-shadow: inset rgba(68, 68, 68, 0.22) 0 0 2px;
+  border-radius: inherit;
+  backdrop-filter: blur(50px);
+  background-color: rgba(255, 255, 255, 0.342);
+  display: flex;
+  justify-content: unset;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.493);
+  border-left: 1px solid hsla(0, 0%, 100%, 0.493);
+  border-right: 2px solid hsla(0, 0%, 100%, 0.493);
+  border-bottom: 2px solid hsla(0, 0%, 100%, 0.493);
+}
+.card--container--shadow .card .card-img > img {
+  width: min(60px, 10vw);
+  height: 60px;
+  border-radius: 0;
+}
+.card--container--shadow .card .card-text {
+  font-family: "Libre Barcode 128 Text", serif;
+  font-size: 2.3em;
+}
+
+.certificates {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.certificates .cert--container {
+  border-radius: 0.5pc;
+}
+.certificates .cert--container--shadow {
+  border-radius: inherit;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 15px 50px;
+}
+.certificates .cert--container--shadow .card {
+  border-radius: inherit;
+  background-color: white;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: #eee;
+  height: 100%;
+  padding: 20px;
+}
+.projects--container {
+  border-radius: 0.5pc;
+}
+.projects--container--shadow {
+  box-shadow: rgba(255, 255, 255, 0.5) 0 0 30px;
+  position: relative;
+  border-radius: inherit;
+}
+.projects--container--shadow .color-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+.projects--container--shadow .color-container .color1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 0;
+  background-color: rgb(5, 255, 68);
+  border-radius: 50px;
+  filter: blur(30px);
+}
+.projects--container--shadow .color-container .color2 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 0;
+  background-color: rgb(37, 5, 255);
+  filter: blur(50px);
+}
+.projects--container--shadow .card {
+  border-radius: inherit;
+  background-color: rgba(255, 255, 255, 0.432);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.74);
+  border-left: 1px solid rgba(255, 255, 255, 0.74);
+  border-right: 1px solid rgba(255, 255, 255, 0.74);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.719);
+  box-shadow: inset rgba(0, 0, 0, 0.25) 0 0 2px, rgba(255, 255, 255, 0.5) 0 0 50px;
+}
+.projects--container--shadow .card--img {
+  border-radius: inherit;
+  position: relative;
+}
+.projects--container--shadow .card--img .link-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.418);
+  border-radius: 0.2pc !important;
+  border: 1px solid black;
+  backdrop-filter: blur(20px);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.projects--container--shadow .card--img .link-btn img {
+  width: 15px;
+  filter: invert(1);
+}
+.projects--container--shadow .card--img img {
+  border-radius: 0.2pc !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 1px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

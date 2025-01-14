@@ -1,0 +1,47 @@
+@use './variable' as *;
+@use 'sass:list';
+@use 'sass:string';
+
+// this box mixin are contains width, height, radius, but the radius when we need border radius we will define the value into the radius 
+@mixin box($w, $h, $r: 0) {
+    width: $w;
+    height: $h;
+    @if $r {
+        border-radius: $r;
+    }
+}
+
+@mixin flex-col() {
+    display: $fl;
+    flex-direction: column;
+}
+
+@mixin d-flex ($row: unset, $col: unset) {
+    display: $fl;
+    @if $row or $col {
+        justify-content: $row;
+        align-items: $col;
+    }
+}
+
+@each $size-items in $sizeList {
+    .p#{$size-items} {
+        padding: $size-items + px;
+    }
+
+    .m#{$size-items} {
+        margin: $size-items + px;
+    }
+
+    @each $posList in $positionList {
+
+        .p#{string.slice($posList, 0, 1)}-#{$size-items} {
+            padding-#{$posList}: $size-items + px;
+        }
+
+        .m#{string.slice($posList, 0, 1)}-#{$size-items} {
+            margin-#{$posList}: $size-items + px;
+        }
+
+    }
+}

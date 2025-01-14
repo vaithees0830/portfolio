@@ -1,0 +1,8 @@
+@use '../abstract/abs_forwards' as *;
+
+nav {
+    @include d-flex($center, $center);
+    gap: 20px;
+    @extend .p10;
+    // background-color: red;
+}

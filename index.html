@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Barcode+128+Text&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.icons8.com/fluency/48/resume.png"
+    />
+  </head>
+  <body>
+    <section class="profile" id="profile">
+      <div class="profile--container">
+        <div class="profile--container--details">
+          <p class="font-italic">Hi! there</p>
+          <h1></h1>
+        </div>
+        <div class="profile--container--contact"></div>
+        <div class="profile--container--social"></div>
+
+        <div class="nav-bottom">
+          <a href="#main">
+            <img
+              src="https://img.icons8.com/windows/20/long-arrow-down.png"
+              alt="long-arrow-down"
+            />
+            <div>View Details</div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <main class="main" id="main">
+      <nav class="navbar" id="navbar">
+        <a href="#profile">
+          <button class="btn btn--scondary">Profile</button>
+        </a>
+        <a href="#sk">
+          <button
+            class="btn btn--scondary active actionMethod"
+            onclick="actionMethod(event)"
+          >
+            Skills
+          </button>
+        </a>
+        <a href="#ce">
+          <button
+            id="actionMethod"
+            class="btn btn--scondary actionMethod"
+            onclick="actionMethod(event)"
+          >
+            Certificaties
+          </button>
+        </a>
+        <a href="#pr">
+          <button
+            id="actionMethod"
+            class="btn btn--scondary actionMethod"
+            onclick="actionMethod(event)"
+          >
+            Projects
+          </button>
+        </a>
+      </nav>
+
+      <div class="viewport">
+        <div class="viewport--size" id="sk">
+          <section class="skills" id="skills"></section>
+        </div>
+        <div class="viewport--size" id="ce">
+          <section class="certificates" id="certificates"></section>
+        </div>
+        <div class="viewport--size" id="pr">
+          <section class="projects" id="projects"></section>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/method.js"></script>
+    <script type="module" src="./assets/js/script.js"></script>
+  </body>
+</html>

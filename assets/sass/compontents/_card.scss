@@ -1,0 +1,63 @@
+@use '../abstract/abs_forwards' as *;
+
+.card--container {
+    border-radius: .5pc;
+    
+    &--shadow {
+        box-shadow: rgba(255, 255, 255, 0.5) 0 0 30px;
+        border-radius: inherit;
+        position: relative;
+
+        .color-container {
+            position: absolute;
+            @include box (100%, 100%);
+
+            .color1 {
+                @include box (60px, 60px, 50%);
+                background-color: rgb(230 230 230);
+                filter: blur(40px);
+
+                position: absolute;
+                left: 80px;
+                bottom: -30px;
+            }
+
+            .color2 {
+                @include box (50px, 50px, 50%);
+                background-color: rgb(0, 174, 255);
+                filter: blur(50px);
+
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+
+        }
+
+        .card {
+            box-shadow: inset rgb(68 68 68 / 22%) 0 0 2px;
+            border-radius: inherit;
+            @extend .p5;
+            backdrop-filter: blur(50px);
+            background-color: rgba(255, 255, 255, 0.342);
+            @include d-flex (unset, center);
+            gap: 20px;
+
+            border-top: 1px solid hsla(0, 0%, 100%, 0.493);
+            border-left: 1px solid hsla(0, 0%, 100%, 0.493);
+            border-right: 2px solid hsla(0, 0%, 100%, 0.493);
+            border-bottom: 2px solid hsla(0, 0%, 100%, 0.493);
+
+            .card-img > img{
+                @include box (min(60px, 10vw), 60px);
+            }
+
+            .card-text {
+                font: {
+                    family: $font-barcode;
+                    size: 2.3em;
+                }
+            }
+        }
+    }
+}

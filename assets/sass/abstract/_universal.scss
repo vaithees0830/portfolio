@@ -1,0 +1,38 @@
+@use './variable' as *;
+@use './color' as *;
+
+* {
+    box-sizing: border-box;
+    padding: $zero;
+    margin: $zero;
+    text-decoration: $none;
+    font-family: $font-body;
+    color: $col1;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: $none;
+    color: inherit;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    padding: 0;
+    border-radius: 50px;
+    appearance: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: silver;
+    border-radius: 50px;
+}

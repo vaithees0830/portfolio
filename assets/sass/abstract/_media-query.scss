@@ -1,0 +1,59 @@
+@use './other_stuff' as *;
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+    .profile--container--contact {
+        @include flex-col();
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr) !important;
+        
+        .card-text {
+            font: {
+                size: 2.5em !important;
+            }
+        }
+    }
+
+    nav {
+        gap: 5px !important;
+    }
+    
+    .btn--scondary {
+        padding: 10px !important;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .profile--container--contact {
+        @include flex-col();
+    }
+    .card--container--shadow .card .card-img > img {
+        width: 60px !important;
+    }
+
+    nav {
+        gap: 5px !important;
+    }
+
+    .btn--scondary {
+        width: auto !important;
+        padding: 10px !important;
+    }
+
+    .skills, .certificates {
+        padding: 20px;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .projects {
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+

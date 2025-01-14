@@ -1,0 +1,68 @@
+@use '../abstract/abs_forwards' as *;
+
+.profile {
+    @include box(100%, 100%);
+
+    .nav-bottom {
+        justify-self: end;
+    
+        & > a{
+            @extend .pt-10, .pr-15, .pl-15, .pb-10;
+            border-radius: 50px;
+            background-color: $col2;
+            border: 1px dashed $col3;
+            @include d-flex ($center, $center);
+
+            &:hover {
+                border-bottom-color: $col4;
+                box-shadow: rgba(0, 0, 0, 20%) 0 20px 80px;
+                transition: box-shadow 0.5s;
+            }
+        }
+    }
+
+    &--container {
+        height: 100%;
+        @include d-flex ($center, $center);
+        @include flex-col();
+        gap: 10px;
+
+        &--details {
+
+            & > h1 {
+                font-size: min(6rem, 8vw);
+            }
+        }
+
+        &--contact {
+            border: 1px dashed $col1;
+            @include d-flex();
+
+            & > a {
+                border: 1px dashed $col1;
+                @include d-flex(unset, $center);
+                @extend .p10;
+                gap: 10px;
+                font-size: min(1rem, 4vw);
+
+                & > div:hover {
+                   border-bottom: 1px dashed $col1;
+                }
+            }
+        }
+
+        &--social {
+            @include d-flex();
+            gap: 10px;
+
+            a {
+                border-bottom: 1px dashed $trans;
+
+                &:hover {
+                    border-bottom-color: $col4;
+                }
+            }
+        }
+    }
+}
+

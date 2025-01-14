@@ -1,0 +1,66 @@
+@use '../abstract/abs_forwards' as *;
+
+.btn {
+    appearance: $none;
+    border: none;
+}
+
+.btn--scondary {
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: .5pc;
+    border: $trans;
+    border-top: 1px solid rgba(185, 185, 185, 0.5);
+    border-left: 1px solid rgba(185, 185, 185, 0.50);
+    border-right: 1px solid rgba(185, 185, 185, 0.50);
+    border-bottom: 3px solid rgba(185, 185, 185, 0.774);
+    // box-shadow: rgba(0, 0, 0, 0.171) 0 30px 70px;
+    background-color: #fff;
+
+    &:hover {
+        border-top: 1px solid rgba(119, 119, 119, 0.5);
+        border-left: 1px solid rgba(119, 119, 119, 0.5);
+        border-right: 1px solid rgba(119, 119, 119, 0.5);
+        border-bottom: 3px solid rgba(119, 119, 119, 0.774);
+        box-shadow: rgba(0, 0, 0, 0.171) 0 30px 70px;
+        background-color: #000;
+        color: #FFF;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
+}
+
+.active {
+    border-top: 1px solid rgba(119, 119, 119, 0.5);
+    border-left: 1px solid rgba(119, 119, 119, 0.5);
+    border-right: 1px solid rgba(119, 119, 119, 0.5);
+    border-bottom: 3px solid rgba(119, 119, 119, 0.774);
+    box-shadow: rgba(0, 0, 0, 0.171) 0 30px 70px;
+    background-color: #000;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn--thirty {
+    @extend .p10, .pl-20, .pr-20;
+    background-color: black;
+    color: white;
+    border-radius: .5pc;
+    cursor: pointer;
+    border-top: 1px solid rgb(68, 68, 68);
+    border-left: 1px solid rgb(68, 68, 68);
+    border-right: 1px solid rgb(68, 68, 68);
+    border-bottom: 3px solid rgb(68, 68, 68);
+    box-shadow: rgba(0, 0, 0, 0.171) 0 30px 50px, rgba(0, 0, 0, 0.171) 0 30px 100px;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: transform .5s;
+    }
+
+    &:active {
+        transform: scale(1);
+    }
+}
